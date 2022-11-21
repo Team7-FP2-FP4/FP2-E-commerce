@@ -42,7 +42,7 @@ const Navbar = () => {
                     ) : token === '2' ? (
                         <div className="buttons text-center">
                             <NavLink to="/" className="btn btn-outline-dark m-2">Home</NavLink>
-                            <NavLink to="/cart" className="btn btn-outline-dark m-2">Rekap Penjualan </NavLink>
+                            <NavLink to="/rekap" className="btn btn-outline-dark m-2">Rekap Penjualan </NavLink>
                             <NavLink to="/login" className="btn btn-outline-dark m-2" onClick={logout}>Logout</NavLink>
                             {/* <p>ini admin</p> */}
                         </div>
