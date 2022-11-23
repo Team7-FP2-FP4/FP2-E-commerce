@@ -13,3 +13,29 @@ export const delCart = (product) =>{
         payload:product
     }
 }
+
+// For Set Product
+export const setProduct = (product) =>{
+    return {
+        type:"SETPRODUCT",
+        payload:product
+    }
+}
+
+// For Update Stock Cart
+export const updateStockCart = (product, qty) =>{
+    return {
+        type:"UPDATESTOCKCART",
+        payload:product, 
+        qty:qty
+    }
+}
+
+// For Update Stock Admin
+export const updateStockAdmin = (product, qty) =>{
+    return {
+        type:"UPDATESTOCKADMIN",
+        payload:product,
+        qty:qty
+    }
+}

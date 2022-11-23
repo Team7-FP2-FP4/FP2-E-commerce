@@ -1,12 +1,26 @@
 import React from "react";
 import { Navbar } from "../components";
 import { useSelector, useDispatch } from "react-redux";
-import { addCart, delCart } from "../redux/action";
+import { addCart, delCart, updateStockCart } from "../redux/action";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
   const state = useSelector((state) => state.handleCart);
   const dispatch = useDispatch();
+  // const item = state;
+
+  console.log(state);
+
+  const handleCheckout = (e) => {
+    e.preventDefault();
+    for(let item in state) {
+      dispatch(updateStockCart(item.id, item.qty));
+      console.log("stock:", item.stock);
+      console.log(item);
+    }
+    // state.map((item) => {
+    //   dispatch(updateStockCart(item.id, item.qty));
+  };
 
   const EmptyCart = () => {
     return (
@@ -148,6 +162,7 @@ const Cart = () => {
                     <Link
                       to="/"
                       className="btn btn-dark btn-lg btn-block"
+                      onClick={handleCheckout}
                     >
                       Go to checkout
                     </Link>
