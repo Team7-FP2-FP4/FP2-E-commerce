@@ -1,14 +1,14 @@
-### Final Project 2 Kelompok 7 Hacktiv8 E-commerce
+# Final Project 2 Kelompok 7 Hacktiv8 E-commerce
 
 ## Username & Passwords
 
-# User
+### User
 
 Account user: <br>
 email: john@gmail.com <br>
 password: m38rmF$ <br>
 
-# Admin
+### Admin
 
 Account Admin: <br>
 email: admin@bukapedia.com <br>
