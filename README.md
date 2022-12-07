@@ -4,12 +4,12 @@
 
 # User
 
-Account user:
-email: john@gmail.com
-password: m38rmF$
+Account user: <br>
+email: john@gmail.com <br>
+password: m38rmF$ <br>
 
 # Admin
 
-Account Admin:
-email: admin@bukapedia.com
-password: admin123
+Account Admin: <br>
+email: admin@bukapedia.com <br>
+password: admin123 <br>
